@@ -16,10 +16,21 @@
     box-sizing: border-box;
 }
 
+ul, li, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
-    width: 100%;
-    max-width: 1158px;
+    width: 1158px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .section {
@@ -27,7 +38,8 @@
 }
 
 .header {
-    border-bottom: 1px solid #ececec;
+    padding: 25px 0;
+    box-shadow: 1px 1px 1px 1px rgba(46, 47, 66, 0.16);
 }
 
 .header > .container {
@@ -49,11 +61,14 @@
 .nav-item {
     list-style: none;
     padding: 0;
-    margin-right: 40px;
     font-size: 16px;
     font-weight: 600;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 40px;
 }
 
 .nav-link {
@@ -150,16 +165,25 @@
     cursor: pointer;
 }
 
+.advantages {
+    padding-bottom: 0;
+}
+
 
 .advantages-list {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .advantages-item {
     list-style: none;
-    width: 260px;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.advantages-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .advantages-title {
@@ -168,6 +192,7 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
+    margin-bottom: 20px;
 }
 
 .advantages-text {
@@ -242,8 +267,12 @@
     font-weight: 600;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
-    margin-top: 30px;
-    margin-bottom: 20px;
+    /* margin-top: 30px;
+    margin-bottom: 20px; */
+}
+
+.title-wrapper {
+    padding: 30px 0;
 }
 
 .team-item-text {
@@ -325,9 +354,7 @@
     position: relative;
     filter: drop-shadow(0px, 1px rgba(46, 47, 66, 0.08));
     box-sizing: border-box;
-    border: 0.5px solid var(--cloud);
     border-radius: 6px;
-    padding-bottom: 40px;
 }
 
 .img-text {
@@ -350,19 +377,28 @@
     margin-bottom: 24px;
   }
 
+.gallery-card-wrapper {
+    padding: 20px 20px 30px 20px;
+    border: 0.5px solid var(--cloud);
+    border-top: none;
+}
+
 .gallery-card-title {
-    padding: 0 20px;
     margin-top: 30px;
+    margin-bottom: 20px;
     font-size: 20px;
     line-height: 1.2;
     font-weight: 600;
     letter-spacing: 0.02em;
 }
 .gallery-card-text {
-    padding: 0 20px;
     margin: 0;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+
+.hidden {
+    display: none;
 }
