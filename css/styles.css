@@ -93,7 +93,6 @@ img {
     list-style: none;
     font-size: 16px;
     line-height: 1.5;
-    left: 2%;
     margin-left: 40px;
     
 }
@@ -216,7 +215,6 @@ img {
 
 .work-list {
     display: flex;
-    justify-content: center;
 }
 
 .work-item {
@@ -224,7 +222,7 @@ img {
 }
 
 .work-item:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 24px;
   }
 
 .team {
@@ -262,27 +260,29 @@ img {
   }
 
 .team-item-title {
+    text-align: center;
     font-size: 20px;
     line-height: 1.2;
     font-weight: 600;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
-    /* margin-top: 30px;
-    margin-bottom: 20px; */
 }
 
 .title-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     padding: 30px 0;
 }
 
 .team-item-text {
+    text-align: center;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     margin-top: 0;
-    margin-bottom: 40px;
 }
 
 .footer {
@@ -301,6 +301,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--cornflower);
+    margin-top: 16px;
 }
 
 .portfolio-title {
@@ -378,14 +379,13 @@ img {
   }
 
 .gallery-card-wrapper {
-    padding: 20px 20px 30px 20px;
+    padding: 32px 16px;
     border: 0.5px solid var(--cloud);
     border-top: none;
 }
 
 .gallery-card-title {
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     font-size: 20px;
     line-height: 1.2;
     font-weight: 600;
